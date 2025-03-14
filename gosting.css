@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#upload-section, #tasks {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 0.5rem;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+#uploadStatus {
+    margin-top: 10px;
+    color: green;
+}
