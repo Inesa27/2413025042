@@ -1,16 +1,11 @@
-// Menambahkan efek scaling saat mouse hover pada elemen dengan kelas 'hover-scale'
-document.addEventListener("DOMContentLoaded", () => {
-    const hoverElements = document.querySelectorAll(".hover-scale");
+// Script untuk menonaktifkan hanya link yang belum aktif
+document.addEventListener("DOMContentLoaded", function () {
+    const disabledLinks = document.querySelectorAll("a.disabled-link");
 
-    hoverElements.forEach(el => {
-        el.style.transition = "transform 0.3s ease";
-
-        el.addEventListener("mouseover", () => {
-            el.style.transform = "scale(1.02)";
-        });
-
-        el.addEventListener("mouseout", () => {
-            el.style.transform = "scale(1)";
-        });
-    });
+    disabledLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            alert("Fitur ini masih dalam pengembangan!");
+        });
+    });
 });
