@@ -1,10 +1,8 @@
-// Script untuk menonaktifkan hanya link yang belum aktif
-document.addEventListener("DOMContentLoaded", function () {
-    const disabledLinks = document.querySelectorAll("a.disabled-link");
-
-    disabledLinks.forEach((link) => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    const disabledLinks = document.querySelectorAll(".disabled-link");
+    disabledLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
             alert("Fitur ini masih dalam pengembangan!");
         });
     });
